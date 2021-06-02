@@ -1,9 +1,16 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">exe1</string>
     <string-array name="array_colors">
         <item>Red</item>
         <item>Green</item>
         <item>Yellow</item>
         <item>Blue</item>
+    </string-array>
+    <string name="app_name1" >exe1</string>
+    <string-array name="operators">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
     </string-array>
 </resources>
