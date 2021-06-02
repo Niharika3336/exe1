@@ -6,7 +6,7 @@
         <item>Yellow</item>
         <item>Blue</item>
     </string-array>
-    <string name="app_name1" >exe1</string>
+    <string name="app_name1">exe1</string>
     <string-array name="operators">
         <item>+</item>
         <item>-</item>
