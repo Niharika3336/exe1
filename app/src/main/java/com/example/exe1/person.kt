@@ -7,6 +7,5 @@ class person {
     }
     var gender:String? = null
     var age:Int = 0
-    get()= field
-    set(value)=if(value<18) print("person is minor") else field=value
+    set(value)=if(value<18) field=0 else field=value
 }
