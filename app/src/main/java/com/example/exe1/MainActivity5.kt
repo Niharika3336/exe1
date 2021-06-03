@@ -9,7 +9,6 @@ import android.widget.EditText
 import android.widget.TextView
 import java.util.*;
 class MainActivity5 : AppCompatActivity() {
-    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main5)
@@ -17,17 +16,12 @@ class MainActivity5 : AppCompatActivity() {
         var temp1  = findViewById<EditText>(R.id.temp)
         var level1 = findViewById<EditText>(R.id.level)
         var view1 =  findViewById<TextView>(R.id.view)
-        var food1 =  findViewById<TextView>(R.id.food)
-        var chng1 =  findViewById<TextView>(R.id.chng)
         clck1.setOnClickListener(View.OnClickListener {
             var day:String = randomDay()
             var food = fishFood(day)
             var a :Int = temp1.text.toString().toInt()
             var b :Int = level1.text.toString().toInt()
-            view1.setText("Today is  "+ day)
-            food1.setText(", you need to feed "+fishFood(day) )
-            chng1.setText(" ,water chanage: "+change(day,a,b))
-
+            view1.setText("Today is  "+ day +", you need to feed "+ food +" ,water chanage: "+change(day,a,b))
         })
     }
 }
