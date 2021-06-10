@@ -21,7 +21,7 @@ class MainActivity6 : AppCompatActivity() {
             per.name = name.text.toString()
             per.gender = gender.text.toString()
             per.age = age.text.toString().toInt()
-            var result = " ${per.name}"
+            var result = if(per.age!=0)"${per.name}" else "Person is minor"
             Toast.makeText(this, result, Toast.LENGTH_LONG).show()
         })
     }
